@@ -16,7 +16,7 @@
   &__background {
     color: #999;
     position: absolute;
-    bottom: -75%;
+    bottom: -55%;
     left: -20px;
     right: -20px;
     z-index: -100;
@@ -24,9 +24,21 @@
     width: calc(100% + 40px);
     background: $color-black;
 
+    @include respond-to(handhelds) {
+      bottom: -15%;
+    }
+
+    @include respond-to(medium-screens) {
+      bottom: -65%;
+    }
+
+    @include respond-to(wide-screens) {
+      bottom: -90%;
+    }
+
     img {
       width: 100%;
-      opacity: 0.75;
+      opacity: 0.95;
     }
   }
 
@@ -55,20 +67,6 @@
 
     &--3 {
       font-size: 85px;
-    }
-
-    @include respond-to(medium-screens) {
-      &--1 {
-        font-size: 80px;
-      }
-
-      &--2 {
-        font-size: 60px;
-      }
-
-      &--3 {
-        font-size: 40px;
-      }
     }
 
     &-text {

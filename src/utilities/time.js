@@ -42,8 +42,10 @@ const getDaysUntilNext = (date) => {
  */
 const getYearsSince = (date, nextDate = "") => {
   let eventDate = moment(date);
-  let diffDate = moment(nextDate);
-  return diffDate.diff(eventDate, "years");
+  if (nextDate.diff(moment()) < 0) {
+    nextDate.add(1, "Y");
+  }
+  return moment(nextDate).diff(eventDate, "years");
 };
 
 /**

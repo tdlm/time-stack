@@ -9,7 +9,7 @@ $color-black: #000;
 $color-white: #fff;
 
 // Media queries.
-$break-small: 400px;
+$break-small: 600px;
 $break-large: 1024px;
 
 @mixin respond-to($media) {
