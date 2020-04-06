@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import moment from "moment";
 
 import { useSelector } from "react-redux";
 import CountdownCard from "./CountdownCard";

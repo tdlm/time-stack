@@ -72,6 +72,22 @@
     "gender": "male"
   },
   {
+    "title": "Autumn's Birthday",
+    "slug": "autumns-birthday",
+    "date": "2003-11-29T07:00",
+    "repeating": true,
+    "type": "birthday",
+    "gender": "female"
+  },
+  {
+    "title": "Tyler's Birthday",
+    "slug": "tylers-birthday",
+    "date": "2002-04-24T07:00",
+    "repeating": true,
+    "type": "birthday",
+    "gender": "male"
+  },
+  {
     "title": "Scott's Birthday",
     "slug": "scotts-birthday",
     "date": "1983-04-01T07:00",
