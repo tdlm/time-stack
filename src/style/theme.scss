@@ -8,6 +8,12 @@ $base-line-height: 24;
 $color-black: #000;
 $color-white: #fff;
 
+$color-blackish: #111;
+$color-grey-dark: #333;
+$color-grey-medium: #555;
+$color-grey-light: #999;
+$color-grey-ultralight: #eee;
+
 // Media queries.
 $break-small: 600px;
 $break-large: 1024px;
@@ -38,7 +44,16 @@ body {
   min-width: 400px;
 }
 
+a {
+  color: $color-grey-medium;
+}
+
+footer {
+  display: block;
+}
+
 // Imports.
-@import "../components/Filter.scss";
 @import "../components/CountdownList.scss";
 @import "../components/CountdownCard.scss";
+@import "../components/Filter.scss";
+@import "../components/Footer.scss";

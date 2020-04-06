@@ -7,6 +7,7 @@ import "./style/theme.scss";
 
 import CountdownList from "./components/CountdownList";
 import Filter from "./components/Filter";
+import Footer from "./components/Footer";
 
 const store = configureStore({});
 
@@ -17,6 +18,7 @@ const App = () => {
     <>
       <Filter />
       <CountdownList />
+      <Footer />
     </>
   );
 };

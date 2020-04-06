@@ -5,6 +5,11 @@ import CountdownCard from "./CountdownCard";
 
 import "./CountdownList.scss";
 
+/**
+ * Countdown List component.
+ *
+ * Displays Countdown Card components and filters their output.
+ */
 const CountdownList = () => {
   const events = useSelector((state) => state.app.events);
   const filterText = useSelector((state) => state.app.filterText);

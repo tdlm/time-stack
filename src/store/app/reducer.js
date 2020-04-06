@@ -3,12 +3,14 @@ import countdowns from "../../utilities/countdowns.json";
 import { formatEventList } from "../../utilities/time";
 import { sortArrayByProperty } from "../../utilities/array";
 
+// Get initial set of events from countdowns json and format/sort it.
 let events = sortArrayByProperty(
   formatEventList(countdowns),
   "daysUntil",
   "descending"
 );
 
+// Set up our app reducer.
 const app = (
   state = {
     events,

@@ -9,6 +9,13 @@ import {
   IMAGE_BIRTHDAY,
 } from "../utilities/image";
 
+/**
+ * Anniversary Countdown Card.
+ * @param {string} prop.title Title string.
+ * @param {Date} prop.date Date object.
+ * @param {number} prop.daysUntil Days until event.
+ * @param {string} prop.image Image URL string.
+ */
 const Anniversary = ({ title, date, daysUntil, image }) => {
   let nextDate = moment(date).set("year", moment().year());
   let yearsSince = getYearsSince(date, nextDate).toString();
@@ -35,6 +42,14 @@ const Anniversary = ({ title, date, daysUntil, image }) => {
   );
 };
 
+/**
+ * Birthday Countdown Card.
+ * @param {string} prop.title Title string.
+ * @param {Date} prop.date Date object.
+ * @param {string} prop.gender Gender string (male/female).
+ * @param {number} prop.daysUntil Days until event.
+ * @param {string} prop.image Image URL string.
+ */
 const Birthday = ({ title, date, gender, daysUntil, image }) => {
   let nextDate = moment(date).set("year", moment().year());
   let yearsSince = getYearsSince(date, nextDate).toString();
@@ -66,6 +81,13 @@ const Birthday = ({ title, date, gender, daysUntil, image }) => {
   );
 };
 
+/**
+ * Singular Countdown Card.
+ * @param {string} prop.title Title string.
+ * @param {Date} prop.date Date object.
+ * @param {number} prop.daysUntil Days until event.
+ * @param {string} prop.image Image URL string.
+ */
 const Singular = ({ title, date, daysUntil, image }) => {
   let nextDate = moment(date);
 
@@ -88,15 +110,19 @@ const Singular = ({ title, date, daysUntil, image }) => {
   );
 };
 
-const CountdownCard = ({
-  type,
-  title,
-  gender,
-  date,
-  daysUntil,
-  image,
-  repeating,
-}) => {
+/**
+ * Countdown Card component.
+ *
+ * Component factory based on event type.
+ *
+ * @param {string} prop.type Event type.
+ * @param {string} prop.title Title string.
+ * @param {string} prop.gender Event gender (if applicable).
+ * @param {Date} prop.date Date object.
+ * @param {number} prop.daysUntil Days until event.
+ * @param {string} prop.image Image URL string.
+ */
+const CountdownCard = ({ type, title, gender, date, daysUntil, image }) => {
   daysUntil = daysUntil.toString();
   switch (type) {
     case eventTypes.BIRTHDAY:

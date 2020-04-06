@@ -2,9 +2,12 @@ import React, { useState, useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { setTextFilter } from "../store/app/actions";
 
+/**
+ * Filter component.
+ * This handles all filtering for the countdown list.
+ */
 const Filter = () => {
   const dispatch = useDispatch();
-
   const [filterText, setFilterText] = useState("");
 
   // Debounce typing by 50 milliseconds.
