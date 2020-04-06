@@ -9,7 +9,7 @@
   {
     "title": "Sarah's Birthday",
     "slug": "sarahs-birthday",
-    "date": "1984-06-12T12:00",
+    "date": "1984-06-12T07:00",
     "repeating": true,
     "type": "birthday",
     "gender": "female",
@@ -18,14 +18,14 @@
   {
     "title": "Scott and Sarah's Wedding Anniversary",
     "slug": "scott-sarah-anniversary",
-    "date": "2006-10-21T12:00",
+    "date": "2006-10-21T07:00",
     "repeating": true,
     "type": "anniversary"
   },
   {
     "title": "Ben's Birthday",
     "slug": "bens-birthday",
-    "date": "2014-05-20T12:00",
+    "date": "2014-05-20T07:00",
     "repeating": true,
     "type": "birthday",
     "gender": "male"
@@ -33,7 +33,7 @@
   {
     "title": "Luke's Birthday",
     "slug": "lukes-birthday",
-    "date": "2010-06-23T12:00",
+    "date": "2010-06-23T07:00",
     "repeating": true,
     "type": "birthday",
     "gender": "male"
@@ -41,7 +41,7 @@
   {
     "title": "Sam's Birthday",
     "slug": "sam-weavers-birthday",
-    "date": "1974-06-11T12:00",
+    "date": "1974-06-11T07:00",
     "repeating": true,
     "type": "birthday",
     "gender": "male"
@@ -49,7 +49,7 @@
   {
     "title": "Pam's Birthday",
     "slug": "pam-weavers-birthday",
-    "date": "1963-09-29T12:00",
+    "date": "1963-09-29T07:00",
     "repeating": true,
     "type": "birthday",
     "gender": "female"
@@ -57,7 +57,7 @@
   {
     "title": "Chene's Birthday",
     "slug": "chene-mahlers-birthday",
-    "date": "1990-10-07T12:00",
+    "date": "1990-10-07T07:00",
     "repeating": true,
     "type": "birthday",
     "gender": "male"
@@ -65,7 +65,7 @@
   {
     "title": "Scott's Birthday",
     "slug": "scott-weavers-birthday",
-    "date": "1983-04-01T12:00",
+    "date": "1983-04-01T07:00",
     "repeating": true,
     "type": "birthday",
     "gender": "male"
@@ -73,7 +73,7 @@
   {
     "title": "Mom's Birthday",
     "slug": "denver-weavers-birthday",
-    "date": "1954-01-04T12:00",
+    "date": "1954-01-04T07:00",
     "repeating": true,
     "type": "birthday",
     "gender": "female"
@@ -81,7 +81,7 @@
   {
     "title": "Dad's Birthday",
     "slug": "george-weavers-birthday",
-    "date": "1952-01-01T12:00",
+    "date": "1952-01-01T07:00",
     "repeating": true,
     "type": "birthday",
     "gender": "male"
@@ -89,14 +89,14 @@
   {
     "title": "Mom and Dad's Wedding Anniversary",
     "slug": "mom-dad-anniversary",
-    "date": "1972-01-29T12:00",
+    "date": "1972-01-29T07:00",
     "repeating": true,
     "type": "anniversary"
   },
   {
     "title": "Bijan's Birthday",
     "slug": "bijan-roshans-birthday",
-    "date": "1944-06-02T12:00",
+    "date": "1944-06-02T07:00",
     "repeating": true,
     "type": "birthday",
     "gender": "male"
@@ -104,7 +104,7 @@
   {
     "title": "Jaleh's Birthday",
     "slug": "jaleh-roshans-birthday",
-    "date": "1945-06-21T12:00",
+    "date": "1945-06-21T07:00",
     "repeating": true,
     "type": "birthday",
     "gender": "female"
@@ -112,14 +112,14 @@
   {
     "title": "Bijan and Jaleh's Wedding Anniversary",
     "slug": "bijan-jaleh-anniversary",
-    "date": "1973-07-07T12:00",
+    "date": "1973-07-07T07:00",
     "repeating": true,
     "type": "anniversary"
   },
   {
     "title": "AJ's Birthday",
     "slug": "aj-gubsers-birthday",
-    "date": "1987-02-06T12:00",
+    "date": "1987-02-06T07:00",
     "repeating": true,
     "type": "birthday",
     "gender": "male"
@@ -127,7 +127,7 @@
   {
     "title": "Aunt Faith's Birthday",
     "slug": "faith-gubsers-birthday",
-    "date": "1955-09-20T12:00",
+    "date": "1955-09-20T07:00",
     "repeating": true,
     "type": "birthday",
     "gender": "female"
@@ -135,7 +135,7 @@
   {
     "title": "Aunt Linda's Birthday",
     "slug": "linda-haros-birthday",
-    "date": "1946-09-24T12:00",
+    "date": "1946-09-24T07:00",
     "repeating": true,
     "type": "birthday",
     "gender": "female"
@@ -143,7 +143,7 @@
   {
     "title": "Ryan's Birthday",
     "slug": "ryan-haselbys-birthday",
-    "date": "1978-11-25T12:00",
+    "date": "1978-11-25T07:00",
     "repeating": true,
     "type": "birthday",
     "gender": "male"
@@ -151,7 +151,7 @@
   {
     "title": "Lily's Birthday",
     "slug": "lilys-birthday",
-    "date": "2001-04-25T12:00",
+    "date": "2001-04-25T07:00",
     "repeating": true,
     "type": "birthday",
     "gender": "female"
@@ -159,7 +159,7 @@
   {
     "title": "Melody's Birthday",
     "slug": "melodys-birthday",
-    "date": "2003-09-20T12:00",
+    "date": "2003-09-20T07:00",
     "repeating": true,
     "type": "birthday",
     "gender": "female"
@@ -167,7 +167,7 @@
   {
     "title": "Alex's Birthday",
     "slug": "alexs-birthday",
-    "date": "2007-06-07T12:00",
+    "date": "2007-06-07T07:00",
     "repeating": true,
     "type": "birthday",
     "gender": "male"
