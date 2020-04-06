@@ -1,0 +1,109 @@
+.countdown-card {
+  background: none;
+  border-radius: 10px;
+  color: black;
+  display: grid;
+  grid-template-columns: repeat(2, [col] 50%);
+  grid-template-rows: repeat(3, [row] auto);
+  margin-top: 5px;
+  min-width: 375px;
+  max-width: 1100px;
+  overflow: hidden;
+  padding: 10px 5px;
+  position: relative;
+  width: 95%;
+
+  &__background {
+    color: #999;
+    position: absolute;
+    bottom: -75%;
+    left: -20px;
+    right: -20px;
+    z-index: -100;
+    opacity: 1;
+    width: calc(100% + 40px);
+    background: $color-black;
+
+    img {
+      width: 100%;
+      opacity: 0.75;
+    }
+  }
+
+  &__days,
+  &__days-text,
+  &__title,
+  &__date,
+  &__age {
+    text-shadow: 0 0 5px $color-black;
+  }
+
+  &__days {
+    color: $color-white;
+    font-size: 72px;
+    grid-column: col / span 1;
+    grid-row: row;
+    text-align: center;
+
+    &--1 {
+      font-size: 120px;
+    }
+
+    &--2 {
+      font-size: 100px;
+    }
+
+    &--3 {
+      font-size: 85px;
+    }
+
+    @include respond-to(medium-screens) {
+      &--1 {
+        font-size: 80px;
+      }
+
+      &--2 {
+        font-size: 60px;
+      }
+
+      &--3 {
+        font-size: 40px;
+      }
+    }
+
+    &-text {
+      color: $color-white;
+      display: flex;
+      font-size: 16px;
+      grid-column: col / span 1;
+      grid-row: row 2;
+      text-align: center;
+      justify-content: center;
+    }
+  }
+
+  &__title {
+    color: $color-white;
+    display: flex;
+    font-size: 40px;
+    grid-column: col 2 / span 1;
+    grid-row: row 1;
+    text-align: left;
+    align-items: center;
+    padding-right: 5px;
+  }
+
+  &__date {
+    color: $color-white;
+    grid-column: col 2 / span 1;
+    grid-row: row 2;
+    text-align: left;
+  }
+
+  &__age {
+    color: $color-white;
+    grid-column: col 2 / span 1;
+    grid-row: row 3;
+    text-align: left;
+  }
+}

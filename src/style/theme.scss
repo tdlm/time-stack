@@ -1,0 +1,38 @@
+// Base font properties.
+$base-font: Roboto;
+
+$base-font-size: 16;
+$base-line-height: 24;
+
+// Colors.
+$color-black: #000;
+$color-white: #fff;
+
+// Media queries.
+$break-small: 400px;
+$break-large: 1024px;
+
+@mixin respond-to($media) {
+  @if $media == handhelds {
+    @media only screen and (max-width: $break-small) {
+      @content;
+    }
+  } @else if $media == medium-screens {
+    @media only screen and (min-width: $break-small + 1) and (max-width: $break-large - 1) {
+      @content;
+    }
+  } @else if $media == wide-screens {
+    @media only screen and (min-width: $break-large) {
+      @content;
+    }
+  }
+}
+
+// Global settings.
+* {
+  font-family: $base-font;
+}
+
+// Imports.
+@import "../components/CountdownList.scss";
+@import "../components/CountdownCard.scss";
