@@ -1,5 +1,7 @@
 // Base font properties.
-$base-font: Roboto;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap");
+
+$base-font: Roboto, sans-serif;
 
 $base-font-size: 16;
 $base-line-height: 24;
