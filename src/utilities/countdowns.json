@@ -39,8 +39,16 @@
     "gender": "male"
   },
   {
+    "title": "Liv's Birthday",
+    "slug": "livs-birthday",
+    "date": "2007-11-03T07:00",
+    "repeating": true,
+    "type": "birthday",
+    "gender": "female"
+  },
+  {
     "title": "Sam's Birthday",
-    "slug": "sam-weavers-birthday",
+    "slug": "sams-birthday",
     "date": "1974-06-11T07:00",
     "repeating": true,
     "type": "birthday",
@@ -48,7 +56,7 @@
   },
   {
     "title": "Pam's Birthday",
-    "slug": "pam-weavers-birthday",
+    "slug": "pams-birthday",
     "date": "1963-09-29T07:00",
     "repeating": true,
     "type": "birthday",
@@ -56,7 +64,7 @@
   },
   {
     "title": "Chene's Birthday",
-    "slug": "chene-mahlers-birthday",
+    "slug": "chenes-birthday",
     "date": "1990-10-07T07:00",
     "repeating": true,
     "type": "birthday",
@@ -64,7 +72,7 @@
   },
   {
     "title": "Scott's Birthday",
-    "slug": "scott-weavers-birthday",
+    "slug": "scotts-birthday",
     "date": "1983-04-01T07:00",
     "repeating": true,
     "type": "birthday",
@@ -72,7 +80,7 @@
   },
   {
     "title": "Mom's Birthday",
-    "slug": "denver-weavers-birthday",
+    "slug": "denvers-birthday",
     "date": "1954-01-04T07:00",
     "repeating": true,
     "type": "birthday",
@@ -80,7 +88,7 @@
   },
   {
     "title": "Dad's Birthday",
-    "slug": "george-weavers-birthday",
+    "slug": "georges-birthday",
     "date": "1952-01-01T07:00",
     "repeating": true,
     "type": "birthday",
@@ -95,7 +103,7 @@
   },
   {
     "title": "Bijan's Birthday",
-    "slug": "bijan-roshans-birthday",
+    "slug": "bijans-birthday",
     "date": "1944-06-02T07:00",
     "repeating": true,
     "type": "birthday",
@@ -103,7 +111,7 @@
   },
   {
     "title": "Jaleh's Birthday",
-    "slug": "jaleh-roshans-birthday",
+    "slug": "jalehs-birthday",
     "date": "1945-06-21T07:00",
     "repeating": true,
     "type": "birthday",
@@ -118,7 +126,7 @@
   },
   {
     "title": "AJ's Birthday",
-    "slug": "aj-gubsers-birthday",
+    "slug": "ajs-birthday",
     "date": "1987-02-06T07:00",
     "repeating": true,
     "type": "birthday",
@@ -126,7 +134,7 @@
   },
   {
     "title": "Aunt Faith's Birthday",
-    "slug": "faith-gubsers-birthday",
+    "slug": "faiths-birthday",
     "date": "1955-09-20T07:00",
     "repeating": true,
     "type": "birthday",
@@ -134,7 +142,7 @@
   },
   {
     "title": "Aunt Linda's Birthday",
-    "slug": "linda-haros-birthday",
+    "slug": "lindas-birthday",
     "date": "1946-09-24T07:00",
     "repeating": true,
     "type": "birthday",
@@ -142,7 +150,7 @@
   },
   {
     "title": "Ryan's Birthday",
-    "slug": "ryan-haselbys-birthday",
+    "slug": "ryans-birthday",
     "date": "1978-11-25T07:00",
     "repeating": true,
     "type": "birthday",
