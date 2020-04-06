@@ -1,0 +1,20 @@
+.form-filter {
+  display: grid;
+  grid-template-columns: min-content auto;
+  grid-gap: 10px;
+  width: calc(100% - 10px);
+
+  &__label {
+    display: flex;
+    font-size: 24px;
+    grid-column: 1 / 2;
+    justify-content: center;
+  }
+
+  &__input {
+    border: 1px solid #999;
+    font-size: 24px;
+    grid-column: 2 / 5;
+    width: auto;
+  }
+}

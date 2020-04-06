@@ -1,29 +1,29 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import moment from "moment";
 
-import { formatEventList } from "../utilities/time";
-import { sortArrayByProperty } from "../utilities/array";
-
+import { useSelector } from "react-redux";
 import CountdownCard from "./CountdownCard";
 
 import "./CountdownList.scss";
 
-const CountdownList = ({ list }) => {
-  let [currentTime, setCurrentTime] = useState(new Date());
+const CountdownList = () => {
+  const events = useSelector((state) => state.app.events);
+  const filterText = useSelector((state) => state.app.filterText);
+  const [filteredEvents, setFilteredEvents] = useState(events);
 
-  list = formatEventList(list);
-  list = sortArrayByProperty(list, "daysUntil", "descending");
-
-  React.useEffect(() => {
-    let handle = setInterval(() => {
-      setCurrentTime(new Date());
-    }, 1000 * 60); // Update once every minute.
-
-    return () => clearInterval(handle);
-  }, [currentTime, setCurrentTime]);
+  useEffect(() => {
+    const searchText = filterText.toLowerCase();
+    const results = events.filter(
+      (event) =>
+        event.title.toLowerCase().includes(searchText) ||
+        event.date.format("LLLL").toLowerCase().includes(searchText)
+    );
+    setFilteredEvents(results);
+  }, [filterText]);
 
   return (
     <ul className="countdown-list">
-      {list.map((countdown) => {
+      {filteredEvents.map((countdown) => {
         let {
           type,
           title,

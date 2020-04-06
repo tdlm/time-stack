@@ -5,8 +5,8 @@ import configureStore from "./store";
 
 import "./style/theme.scss";
 
-import countdowns from "./utilities/countdowns.json";
 import CountdownList from "./components/CountdownList";
+import Filter from "./components/Filter";
 
 const store = configureStore({});
 
@@ -14,9 +14,10 @@ store.dispatch({ type: "@timestack/@@INIT" });
 
 const App = () => {
   return (
-    <div>
-      <CountdownList list={countdowns} />
-    </div>
+    <>
+      <Filter />
+      <CountdownList />
+    </>
   );
 };
 

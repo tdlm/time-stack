@@ -33,6 +33,12 @@ $break-large: 1024px;
   font-family: $base-font;
 }
 
+html,
+body {
+  min-width: 400px;
+}
+
 // Imports.
+@import "../components/Filter.scss";
 @import "../components/CountdownList.scss";
 @import "../components/CountdownCard.scss";

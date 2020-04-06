@@ -56,13 +56,11 @@ const formatEventList = (arr) =>
   arr
     .map((item) => ({
       ...item,
+      date: moment(item.date),
       daysUntil: getDaysUntilNext(moment(item.date)),
     }))
     .filter((item) => {
-      if (
-        item.type === eventTypes.SINGULAR &&
-        moment(item.date).diff(moment()) < 0
-      ) {
+      if (item.type === eventTypes.SINGULAR && item.date.diff(moment()) < 0) {
         return false;
       }
 
