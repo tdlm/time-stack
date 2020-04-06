@@ -20,6 +20,7 @@ const CountdownList = () => {
     const results = events.filter(
       (event) =>
         event.title.toLowerCase().includes(searchText) ||
+        event.slug.toLowerCase().includes(searchText) ||
         event.date.format("LLLL").toLowerCase().includes(searchText)
     );
     setFilteredEvents(results);
