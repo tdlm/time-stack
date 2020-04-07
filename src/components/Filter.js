@@ -3,6 +3,11 @@ import { useDispatch } from "react-redux";
 import { setTextFilter, setTypeFilter } from "../store/app/actions";
 import { getEventTypesArray } from "../utilities/time";
 
+/**
+ * Event Type filter drop down component.
+ * @param {string} prop.className Class name string.
+ * @param {object} props The remainder of the props.
+ */
 const EventTypeDropdown = ({ className, ...props }) => {
   const dispatch = useDispatch();
   const eventTypes = getEventTypesArray();
@@ -39,6 +44,11 @@ const EventTypeDropdown = ({ className, ...props }) => {
   );
 };
 
+/**
+ * Event Text filter input component.
+ * @param {string} prop.className Class name string.
+ * @param {object} props The remainder of the props.
+ */
 const EventTextInput = ({ className, ...props }) => {
   const dispatch = useDispatch();
   const inputRef = useRef();
