@@ -22,7 +22,7 @@
     z-index: -100;
     opacity: 1;
     width: calc(100% + 40px);
-    background: $color-black;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, $color-black 100%);
 
     @include respond-to(handhelds) {
       bottom: -15%;
@@ -38,7 +38,7 @@
 
     img {
       width: 100%;
-      opacity: 0.95;
+      opacity: 0.85;
     }
   }
 
