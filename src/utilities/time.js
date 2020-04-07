@@ -10,6 +10,17 @@ const eventTypes = {
 };
 
 /**
+ * Event Types array of objects.
+ */
+const getEventTypesArray = () => {
+  return [
+    { value: eventTypes.ANNIVERSARY, label: "Anniversary" },
+    { value: eventTypes.BIRTHDAY, label: "Birthday" },
+    { value: eventTypes.SINGULAR, label: "Singular" },
+  ];
+};
+
+/**
  * Get days until Date.
  * @param {Date} date
  */
@@ -73,4 +84,5 @@ export {
   getYearsSince,
   formatEventList,
   eventTypes,
+  getEventTypesArray,
 };

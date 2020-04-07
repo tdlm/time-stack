@@ -13,18 +13,21 @@ import "./CountdownList.scss";
 const CountdownList = () => {
   const events = useSelector((state) => state.app.events);
   const filterText = useSelector((state) => state.app.filterText);
+  const filterType = useSelector((state) => state.app.filterType);
   const [filteredEvents, setFilteredEvents] = useState(events);
 
   useEffect(() => {
-    const searchText = filterText.toLowerCase();
+    const searchText = filterText?.toLowerCase();
+    const searchType = filterType?.toLowerCase();
     const results = events.filter(
       (event) =>
-        event.title.toLowerCase().includes(searchText) ||
-        event.slug.toLowerCase().includes(searchText) ||
-        event.date.format("LLLL").toLowerCase().includes(searchText)
+        event.type.toLowerCase().includes(searchType) &&
+        (event.title.toLowerCase().includes(searchText) ||
+          event.slug.toLowerCase().includes(searchText) ||
+          event.date.format("LLLL").toLowerCase().includes(searchText))
     );
     setFilteredEvents(results);
-  }, [filterText]);
+  }, [filterText, filterType]);
 
   return (
     <ul className="countdown-list">

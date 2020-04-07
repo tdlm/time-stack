@@ -15,10 +15,13 @@ const app = (
   state = {
     events,
     filterText: "",
+    filterType: "",
   },
   action
 ) => {
   switch (action.type) {
+    case actionTypes.APP_FILTER_TYPE:
+      return { ...state, filterType: action.payload };
     case actionTypes.APP_FILTER_TEXT:
       return { ...state, filterText: action.payload };
     default:
