@@ -2,7 +2,8 @@
   display: grid;
   grid-template-columns: min-content auto;
   grid-gap: 10px;
-  width: calc(100% - 10px);
+  width: calc(100%);
+  max-width: 1110px;
 
   &__label {
     align-items: center;

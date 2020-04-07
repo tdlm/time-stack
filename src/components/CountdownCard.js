@@ -104,7 +104,7 @@ const Singular = ({ title, date, daysUntil, image }) => {
       <div className="countdown-card__days-text">Days Until</div>
       <div className="countdown-card__title">{title}</div>
       <div className="countdown-card__date">
-        {nextDate.format("dddd, MMMM Do")}
+        {nextDate.format("h:mma dddd, MMMM Do")}
       </div>
     </div>
   );
