@@ -17,8 +17,13 @@ const CountdownList = () => {
   const [filteredEvents, setFilteredEvents] = useState(events);
 
   useEffect(() => {
-    const searchText = filterText?.toLowerCase();
-    const searchType = filterType?.toLowerCase();
+    const searchText = filterText?.toLowerCase() || "";
+    const searchType = filterType?.toLowerCase() || "";
+
+    if ("" === searchText && "" === searchType) {
+      return setFilteredEvents(events);
+    }
+
     const results = events.filter(
       (event) =>
         event.type.toLowerCase().includes(searchType) &&
@@ -29,7 +34,7 @@ const CountdownList = () => {
     setFilteredEvents(results);
   }, [filterText, filterType]);
 
-  return (
+  return filteredEvents.length ? (
     <ul className="countdown-list">
       {filteredEvents.map((countdown) => {
         let {
@@ -56,6 +61,10 @@ const CountdownList = () => {
         );
       })}
     </ul>
+  ) : (
+    <div className="countdown-404">
+      <p>No events found. Try changing your filters.</p>
+    </div>
   );
 };
 

@@ -1,10 +1,30 @@
-.countdown-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  min-width: 400px;
+.countdown {
+  &-list {
+    list-style: none;
+    margin: 0;
+    min-width: 400px;
+    padding: 0;
 
-  &__item {
-    margin: 2px 0;
+    &__item {
+      margin: 2px 0;
+    }
+  }
+
+  &-404 {
+    background-color: #999;
+    border-radius: 20px;
+    display: flex;
+    margin: 20px 0;
+    max-width: 1070px;
+    min-height: 100px;
+    padding: 20px;
+    align-items: center;
+
+    p {
+      color: #333;
+      font-size: 24px;
+      text-align: center;
+      width: 100%;
+    }
   }
 }

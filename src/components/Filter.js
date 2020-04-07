@@ -3,7 +3,7 @@ import { useDispatch } from "react-redux";
 import { setTextFilter, setTypeFilter } from "../store/app/actions";
 import { getEventTypesArray } from "../utilities/time";
 
-const EventTypeDropdown = (props) => {
+const EventTypeDropdown = ({ className, ...props }) => {
   const dispatch = useDispatch();
   const eventTypes = getEventTypesArray();
   const [value, setValue] = useState();
@@ -13,38 +13,45 @@ const EventTypeDropdown = (props) => {
   }, [value]);
 
   return (
-    <select
-      value={value}
-      onChange={(e) => setValue(e.currentTarget.value)}
-      {...props}
-    >
-      <option value="">--</option>
-      {eventTypes.map((eventType) => (
-        <option key={eventType.value} value={eventType.value}>
-          {eventType.label}
-        </option>
-      ))}
-    </select>
+    <div className={className} {...props}>
+      <label
+        className={`${className}__label`}
+        onClick={(e) => {
+          inputRef.current.focus();
+        }}
+      >
+        Type
+      </label>
+      <select
+        className={`${className}__select`}
+        value={value}
+        onChange={(e) => setValue(e.currentTarget.value)}
+        {...props}
+      >
+        <option value="">-- Filter Type --</option>
+        {eventTypes.map((eventType) => (
+          <option key={eventType.value} value={eventType.value}>
+            {eventType.label}
+          </option>
+        ))}
+      </select>
+    </div>
   );
 };
 
-/**
- * Filter component.
- * This handles all filtering for the countdown list.
- */
-const Filter = () => {
-  const inputRef = useRef();
+const EventTextInput = ({ className, ...props }) => {
   const dispatch = useDispatch();
-  const [filterText, setFilterText] = useState("");
+  const inputRef = useRef();
+  const [value, setValue] = useState("");
 
   useEffect(() => {
-    dispatch(setTextFilter(filterText));
-  }, [filterText, setFilterText]);
+    dispatch(setTextFilter(value));
+  }, [value]);
 
   return (
-    <form className="form-filter">
+    <div className={className} {...props}>
       <label
-        className="form-filter__label"
+        className={`${className}__label`}
         onClick={(e) => {
           inputRef.current.focus();
         }}
@@ -53,13 +60,25 @@ const Filter = () => {
       </label>
       <input
         ref={inputRef}
-        className="form-filter__input"
+        className={`${className}__input`}
         type="text"
-        value={filterText}
-        onChange={(e) => setFilterText(e.target.value)}
+        value={value}
+        onChange={(e) => setValue(e.target.value)}
         placeholder="Enter text to filter..."
       />
-      <EventTypeDropdown className="form-filter__input form-filter__input--select" />
+    </div>
+  );
+};
+
+/**
+ * Filter component.
+ * This handles all filtering for the countdown list.
+ */
+const Filter = () => {
+  return (
+    <form className="form-filter">
+      <EventTextInput className="form-filter__event-text" />
+      <EventTypeDropdown className="form-filter__event-type" />
     </form>
   );
 };
