@@ -56,10 +56,17 @@
   {
     "title": "Pam's Birthday",
     "slug": "pams-birthday",
-    "date": "1963-09-29T07:00",
+    "date": "1963-11-29T07:00",
     "repeating": true,
     "type": "birthday",
     "gender": "female"
+  },
+  {
+    "title": "Sam and Pam's Wedding Anniversary",
+    "slug": "sam-pam-anniversary",
+    "date": "2001-02-09T07:00",
+    "repeating": true,
+    "type": "anniversary"
   },
   {
     "title": "Chene's Birthday",
