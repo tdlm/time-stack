@@ -29,6 +29,6 @@ npm install
 
 Once you have the app installed, you can run it locally like so:
 
-`npm run dev`
+`npm start`
 
 This will start WebPack Dev Server and it _should_ open up a web browser pointing to http://localhost:8080/ on your system.

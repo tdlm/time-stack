@@ -241,5 +241,21 @@
     "repeating": true,
     "type": "birthday",
     "gender": "male"
+  },
+  {
+    "title": "Dave Staubach's Birthday",
+    "slug": "dave-staubachs-birthday",
+    "date": "1955-04-23T07:00",
+    "repeating": true,
+    "type": "birthday",
+    "gender": "male"
+  },
+  {
+    "title": "Azita's Birthday",
+    "slug": "azita-staubachs-birthday",
+    "date": "1959-08-28T07:00",
+    "repeating": true,
+    "type": "birthday",
+    "gender": "female"
   }
 ]
