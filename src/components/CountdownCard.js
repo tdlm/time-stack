@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import moment from "moment";
+import classNames from "classnames";
 
 import { genderTypes } from "../utilities/genderTypes";
 import { getYearsSince, eventTypes } from "../utilities/time";
@@ -20,8 +21,17 @@ const Anniversary = ({ title, date, daysUntil, image }) => {
   let nextDate = moment(date).set("year", moment().year());
   let yearsSince = getYearsSince(date, nextDate).toString();
 
+  let [isClicked, setIsClicked] = useState(false);
+
+  let handleClick = (e) => {
+    setIsClicked(!isClicked);
+  };
+
   return (
-    <div className="countdown-card countdown-card--anniversary">
+    <div
+      className="countdown-card countdown-card--anniversary"
+      onClick={handleClick}
+    >
       <div className="countdown-card__background">
         <img src={image || IMAGE_ANNIVERSARY} />
       </div>
@@ -37,6 +47,14 @@ const Anniversary = ({ title, date, daysUntil, image }) => {
       </div>
       <div className="countdown-card__age">
         It will have been {yearsSince} years.
+      </div>
+      <div
+        className={classNames({
+          "countdown-card__extra": true,
+          "countdown-card__extra-show": Boolean(isClicked),
+        })}
+      >
+        <div>Anniversary date: {moment(date).format("MMMM D, YYYY")}</div>
       </div>
     </div>
   );
@@ -54,8 +72,17 @@ const Birthday = ({ title, date, gender, daysUntil, image }) => {
   let nextDate = moment(date).set("year", moment().year());
   let yearsSince = getYearsSince(date, nextDate).toString();
 
+  let [isClicked, setIsClicked] = useState(false);
+
+  let handleClick = (e) => {
+    setIsClicked(!isClicked);
+  };
+
   return (
-    <div className="countdown-card countdown-card--birthday">
+    <div
+      className="countdown-card countdown-card--birthday"
+      onClick={handleClick}
+    >
       <div className="countdown-card__background">
         <img src={image || IMAGE_BIRTHDAY} />
       </div>
@@ -76,6 +103,15 @@ const Birthday = ({ title, date, gender, daysUntil, image }) => {
           ? "She"
           : "They"}{" "}
         will be {yearsSince} years old!
+      </div>
+      <div
+        className={classNames({
+          "countdown-card__extra": true,
+          "countdown-card__extra-show": Boolean(isClicked),
+        })}
+      >
+        <div>Birth date: {moment(date).format("MMMM D, YYYY")}</div>
+        <div>Gender: {gender.replace(/./, (c) => c.toUpperCase())}</div>
       </div>
     </div>
   );
