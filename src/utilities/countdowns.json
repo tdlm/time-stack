@@ -1,12 +1,5 @@
 [
   {
-    "title": "G19",
-    "slug": "g19",
-    "date": "2020-04-14T14:00",
-    "repeating": false,
-    "type": "singular"
-  },
-  {
     "title": "Sarah's Birthday",
     "slug": "sarahs-birthday",
     "date": "1984-06-12T07:00",
@@ -133,14 +126,6 @@
     "gender": "male"
   },
   {
-    "title": "Grandma W's Birthday",
-    "slug": "oras-birthday",
-    "date": "1925-08-29T07:00",
-    "repeating": true,
-    "type": "birthday",
-    "gender": "female"
-  },
-  {
     "title": "Mom and Dad's Wedding Anniversary",
     "slug": "george-denver-anniversary",
     "date": "1972-01-29T07:00",
@@ -209,14 +194,6 @@
     "repeating": true,
     "type": "birthday",
     "gender": "female"
-  },
-  {
-    "title": "Ryan's Birthday",
-    "slug": "ryans-birthday",
-    "date": "1978-11-25T07:00",
-    "repeating": true,
-    "type": "birthday",
-    "gender": "male"
   },
   {
     "title": "Lily's Birthday",
