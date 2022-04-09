@@ -29,7 +29,7 @@
     "classnames": "^2.3.1",
     "css-loader": "^3.4.2",
     "html-webpack-plugin": "^4.0.4",
-    "moment": "^2.24.0",
+    "moment": "^2.29.2",
     "node-sass": "^4.14.1",
     "prettier": "^2.0.4",
     "react-redux": "^7.2.0",
